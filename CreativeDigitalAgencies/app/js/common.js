@@ -1,4 +1,4 @@
-// Открытие и закрытие меню
+// Open and close menu
 $('.hamburger').click( function(){
     if ( $(this).hasClass('is-active') ) {
         $(this).removeClass('is-active');
@@ -11,7 +11,7 @@ $('.hamburger').click( function(){
     }
 });
 
-// Гугл карта
+// Google map
 function initMap () {
 	var element = document.getElementById('map');
 
@@ -29,7 +29,7 @@ function initMap () {
 
 }
 
-// Добавление и удаление классов при разных разрешениях экрана для Owl Carousel
+// Add and remove classes for Owl Carousel
 $(document).ready(function(){
 	  if(document.documentElement.clientWidth <= 768) {
 	    $('.custom-carousel').addClass('owl-carousel owl-theme');
@@ -45,13 +45,13 @@ $(document).ready(function(){
   	items: 1,
   	nav: true,
   	margin: 40,
-  	// autoplay: true,
-  	// autoplayTimeout: 7000,
-  	// autoplayHoverPause: true,
+  	autoplay: true,
+  	autoplayTimeout: 7000,
+  	autoplayHoverPause: true,
   });
 });
 
-// Подключение стилей для IE
+// Styles for IE
 var isIE = false || !!document.documentMode;
 
 if (isIE) {
@@ -62,19 +62,12 @@ if (isIE) {
     head.appendChild(link);
 }
 
-// Плавный скролл к якорю 
+// Smooth scroll to anchor
 $(document).ready(function(){
 	$(".scroll").on("click","a", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
-
-		//забираем идентификатор бока с атрибута href
 		var id  = $(this).attr('href'),
-
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-			top = $(id).offset().top;
-		
-		//анимируем переход на расстояние - top за 1500 мс
+		    top = $(id).offset().top;		
 		$('body,html').animate({scrollTop: top}, 1200);
 	});
 });

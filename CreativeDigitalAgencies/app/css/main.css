@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Common styles */
 * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -15,7 +15,6 @@ body {
 	font-family: 'GothamBook', sans-serif;
 	font-size: 1.5rem;
 	overflow-x: hidden;
-	opacity: 1;
 }
 
 footer {
@@ -251,6 +250,13 @@ nav li a:hover::after {
 	margin-right: 2.3rem;
 	margin-left: -.3rem;
 	font-size: 2rem;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.socials a:hover {
+	color: #0098d8;
 }
 
 .hamburger {
@@ -291,6 +297,7 @@ h1 {
 	margin: 2rem auto 0 auto;
 	display: block;
 	color: #fff;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .fa-chevron-down {
@@ -380,7 +387,7 @@ h1 {
 	padding: 4.34% 6.3% 0 11.5%;
 }
 
-.first-row .picture {
+.akita-section .picture {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
@@ -392,16 +399,8 @@ h1 {
 	transition: .5s;
 }
 
-.second-row .picture {
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
-	background: no-repeat center;
-	background-size: cover;
-	height: 47.4rem;
-	-webkit-transition: .5s;
-	-o-transition: .5s;
-	transition: .5s;
+.akita-section .picture:hover {
+	transform: scale(1.05);
 }
 
 .first-row, .second-row {
@@ -483,6 +482,16 @@ article {
 	width: 27rem;
 	text-align: center;
 	margin-right: 2.9rem;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	overflow: hidden;
+}
+
+article:hover {
+	box-shadow: 15px 15px 25px 0px rgba(17, 116, 158, .5);
+	border-radius: 0 0 5px 0;
 }
 
 article:last-child {
@@ -658,8 +667,18 @@ article h3 {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding-bottom: 5.5rem;
+	margin-bottom: 5.5rem;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
 }
+
+.team-member:hover {
+  box-shadow: 15px 15px 25px 0px rgba(0, 0, 0, .5);
+  border-radius: 0 0 .5rem 0;
+}
+
 
 .team-member:last-child {
 	margin-right: 0;
@@ -667,7 +686,7 @@ article h3 {
 
 .team-member-description {
 	width: 21.6rem;
-	height: 11.7rem;
+	height: 10rem;
 	background-color: #fff;
 	margin-top: -4.8rem;
 	padding-top: 2.3rem;
@@ -765,7 +784,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background: #006391;
+	background: #0B84B8;
 }
 
 input[type="text"] {

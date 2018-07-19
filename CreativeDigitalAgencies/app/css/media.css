@@ -344,6 +344,19 @@
 		margin-bottom: 8.5rem;
 	}
 
+	.socials a:hover {
+		color: #fff;
+	}
+
+	article, .team-member {
+		cursor: auto;
+	}
+
+	article:hover, .team-member:hover {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
 }
 
 @media only screen and (max-width: 915px) {
@@ -689,7 +702,7 @@
 
 	.check-section {
 		height: auto;
-		padding: 5rem 0 24rem 0;
+		padding: 5rem 0 20rem 0;
 	}
 
 	.check {
@@ -703,7 +716,7 @@
 	}
 
 	.check:first-child {
-		margin-bottom: 29rem;
+		margin-bottom: 20rem;
 	}
 
 	.check .icon {
