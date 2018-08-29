@@ -1001,13 +1001,14 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1.5px solid #c7b299 !important;
 	outline: none;
 	color: #c7b299 !important;
-	line-height: 20px !important;
+	line-height: 22px !important;
 	text-align: center;
-	transition: .4s;
+	transition: .4s transform;
 }
 
 .posts-carousel .owl-nav > *:active {
 	transform: scale(1.2);
+	line-height: 20px;
 }
 
 .posts-carousel .owl-prev {

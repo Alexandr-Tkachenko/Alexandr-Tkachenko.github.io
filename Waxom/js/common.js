@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+	// Hidding address bar
+	window. scrollTo(0, 0);
+	
+
 	// Open and close search input
 	$('.header-search-button').click( function(){
   	$('.header-search-form').addClass('is-active');
