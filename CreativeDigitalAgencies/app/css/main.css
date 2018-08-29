@@ -405,11 +405,11 @@ h1 {
 
 .first-row, .second-row {
 	overflow: hidden;
-	backgound-color: #222;
+	background-color: #222;
 }
 
 .second-row {
-	backgound-color: #fff;
+	background-color: #fff;
 }
 
 .akita-section .text {
