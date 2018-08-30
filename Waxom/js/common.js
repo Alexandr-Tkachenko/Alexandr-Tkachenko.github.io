@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
 	// Hidding address bar
-	window. scrollTo(0, 0);
+	var top = $('.header').offset().top;		
+	$('body,html').animate({scrollTop: top}, 0);
 	
 
 	// Open and close search input
