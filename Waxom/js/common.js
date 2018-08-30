@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	// Hidding address bar
-	setTimeout(function() {window.scrollTo(0, 1)}, 5000);
-	alert('TEst');
+	setTimeout(function() {window.scrollTo(0, 1000)}, 10000);
+	alert('TEst2');
 	
 
 	// Open and close search input
