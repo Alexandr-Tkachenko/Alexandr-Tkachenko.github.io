@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	// Hidding address bar
-	var top = $('.header').offset().top;		
-	$('body,html').animate({scrollTop: top}, 0);
+	setTimeout(function() {window.scrollTo(0, 1)}, 5000);
+	alert('TEst');
 	
 
 	// Open and close search input
