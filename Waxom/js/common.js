@@ -1,8 +1,17 @@
 $(document).ready(function(){
 
 	// Hidding address bar
-	setTimeout(function() {window.scrollTo(0, 1000)}, 10000);
-	alert('TEst2');
+	
+if (window.innerWidth <= 1024) {
+      const frontPageTop = document.querySelector('.top-screen-front');
+      if (frontPageTop) {
+        frontPageTop.style.height = window.innerHeight + 'px';
+      }
+    }
+
+
+	
+	alert('TEst3');
 	
 
 	// Open and close search input
