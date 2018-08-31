@@ -2,17 +2,14 @@ $(document).ready(function(){
 
 	// Hidding address bar
 	
-if (window.innerWidth <= 1024) {
+	if (window.innerWidth <= 1024) {
       const frontPageTop = document.querySelector('.top-screen-front');
       if (frontPageTop) {
         frontPageTop.style.height = window.innerHeight + 'px';
       }
-    }
+  };
 
-
-	
-	alert('TEst3');
-	
+  alert('Test 4');
 
 	// Open and close search input
 	$('.header-search-button').click( function(){
