@@ -9,8 +9,6 @@ $(document).ready(function(){
       }
   };
 
-  alert('Test 4');
-
 	// Open and close search input
 	$('.header-search-button').click( function(){
   	$('.header-search-form').addClass('is-active');
