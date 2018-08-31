@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+<<<<<<< HEAD
 	// Header height	
 	function headerHeight () {
 
@@ -20,6 +21,16 @@ $(document).ready(function(){
 
 	window.onresize = headerHeight;
 
+=======
+	// Hidding address bar
+	
+	if (window.innerWidth <= 1024) {
+      const frontPageTop = document.querySelector('.top-screen-front');
+      if (frontPageTop) {
+        frontPageTop.style.height = window.innerHeight + 'px';
+      }
+  };
+>>>>>>> parent of adaaeef... Trying to hide address bar #5
 
 	// Open and close search input
 	$('.header-search-button').click( function(){
