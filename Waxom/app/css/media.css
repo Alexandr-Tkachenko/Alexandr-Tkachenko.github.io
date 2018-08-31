@@ -317,6 +317,10 @@
   	width: 46.6%;
   }
 
+  .portfolio-project:last-child, .portfolio-project:nth-last-child(2) {
+  	margin-bottom: 0;
+  }
+
   .video-description {
   	width: 90%;
   }
@@ -553,7 +557,7 @@
 	}
 
 	.s-realization {
-		padding-top: 35px;
+		padding-top: 0;
 	}
 
 	.realization-image {
@@ -632,11 +636,6 @@
 		width: 95%;
 	}
 
-	.portfolio-project {
-		margin-bottom: 20px;
-		padding-bottom: 23px;
-	}
-
 	.portfolio-project-icon.fa-search {
     right: 5em;
 	}
@@ -682,19 +681,15 @@
 
 }
 
-@media only screen and (max-width: 400px) {
-
-	.header-search {
-		font-size: 26px;
-		top: 30px;
-	}
-
-}	
-
 @media only screen and (max-width: 385px) {
 
 	.header-top {
 		padding: 19px 0;
+	}
+
+	.header-search {
+		font-size: 26px;
+		top: 30px;
 	}
 
 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -772,16 +767,16 @@
     left: 4em;
 	}
 
-	.header-search {
-    font-size: 24px;
-	}
-
 }
 
 @media only screen and (max-width: 355px) {
 
 	.waxom {
     font-size: 30px;
+	}
+
+	.header-search {
+    font-size: 24px;
 	}
 
 	.header-composition {
@@ -823,14 +818,6 @@
 
 }
 
-@media only screen and (max-width: 330px) {
-
-	.header-search {
-    font-size: 22px;
-	}
-
-}	
-
 @media only screen and (max-width: 340px) {
 
 	.header-top {
@@ -843,9 +830,9 @@
 	}
 
 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-		width: 30px;
-	  height: 2px;
-	}
+	width: 30px;
+  height: 2px;
+}
 
 	.hamburger-inner:before {
 		top: -8px;
@@ -853,6 +840,10 @@
 
 	.hamburger-inner:after {
 		bottom: -8px;
+	}
+
+	.header-search {
+    font-size: 22px;
 	}
 
 	.video-title {

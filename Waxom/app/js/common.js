@@ -1,14 +1,5 @@
 $(document).ready(function(){
 
-	// Hidding address bar
-	
-	if (window.innerWidth <= 1024) {
-      const frontPageTop = document.querySelector('.header');
-      if (frontPageTop) {
-        frontPageTop.style.height = window.innerHeight + 'px';
-      }
-  };
-
 	// Open and close search input
 	$('.header-search-button').click( function(){
   	$('.header-search-form').addClass('is-active');
