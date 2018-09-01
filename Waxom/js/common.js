@@ -1,14 +1,15 @@
-$(document).ready(function(){
-
-	// Preloader
+// Preloader
+document.body.onload = function() {
 	setTimeout(function() {
-		var preloader = $('.preloader');
-		if ( !preloader.hasClass('animated') )
+		var loader = $('.loader');
+		if ( !loader.hasClass('animated') )
 		{
-			preloader.addClass('done');
+			loader.addClass('done');
 		}
 	}, 1000);
+}
 
+$(document).ready(function(){
 
 	// Header height	
 	function headerHeight () {
@@ -196,7 +197,7 @@ $(document).ready(function(){
 	// Wow.js	
 	setTimeout(function () {
 		new WOW().init();
-	}, 700);
+	}, 1200);
 
 
 	// Styles for fucking IE
