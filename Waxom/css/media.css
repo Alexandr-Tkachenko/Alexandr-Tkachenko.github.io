@@ -135,7 +135,7 @@
 		width: 768px;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		padding: 80px 0 33px;
+		padding: 80px 0 73px;
 	}
 
 	.skill {
@@ -146,6 +146,10 @@
 
 	.skill:first-child, .skill:nth-child(2) {
 		margin-top: 0;
+	}
+
+	.s-realization {
+		padding-top: 43px;
 	}
 	
 }
@@ -546,6 +550,10 @@
 		flex-basis: 100%;
 		margin-top: 0;
 		margin-bottom: 90px;
+	}
+
+	.skill:last-child {
+		margin-bottom: 65px;
 	}
 
 	.skill:after {

@@ -12,8 +12,6 @@ $(document).ready(function(){
 	      }
 	  };
 
-	  alert('hello')
-
 	};
 
 	headerHeight();
@@ -41,13 +39,20 @@ $(document).ready(function(){
 
 	// Mmenu
 	$("#my-menu").mmenu({
-        navbar: false,
+         navbar: false,
         "extensions": [
             "border-full",
             "fx-panels-none",
-             "shadow-panels"
+             "shadow-panels",
          ]
-     });
+      }, {
+         offCanvas: {
+            pageNodetype: "section"
+         }
+      });
+
+
+
 
 	var api = $("#my-menu").data( "mmenu" );
 
