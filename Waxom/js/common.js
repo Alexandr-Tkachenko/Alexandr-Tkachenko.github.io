@@ -16,10 +16,12 @@ $(document).ready(function(){
 
 		const frontPageTop = document.querySelector('.header');
 		const headerCompositionWrapper = document.querySelector('.header-composition-wrapper');
+		const viewportHeight = window.innerHeight;
+
 
 		if (window.innerWidth <= 1024) {
 			if (frontPageTop) {
-				frontPageTop.style.height = window.innerHeight + 'px';
+				frontPageTop.style.height = viewportHeight + 'px';
 			 }
 		};
 
