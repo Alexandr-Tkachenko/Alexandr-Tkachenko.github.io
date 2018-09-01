@@ -23,6 +23,9 @@ function headerHeight () {
 headerHeight ();
 
 window.addEventListener( "resize", headerHeight);
+window.addEventListener( "scroll", headerHeight);
+
+alert('тест')
 
 // Open and close search input
 $('.header-search-button').click( function(){
