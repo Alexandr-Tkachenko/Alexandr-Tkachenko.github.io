@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	// Preloader
+	setTimeout(function() {
+		var preloader = $('.preloader');
+		if ( !preloader.hasClass('animated') )
+		{
+			preloader.addClass('done');
+		}
+	}, 1000);
+
+
 	// Header height	
 	function headerHeight () {
 
@@ -184,7 +194,9 @@ $(document).ready(function(){
 
 
 	// Wow.js	
-	new WOW().init();
+	setTimeout(function () {
+		new WOW().init();
+	}, 700);
 
 
 	// Styles for fucking IE
@@ -199,6 +211,3 @@ $(document).ready(function(){
 	}
 
 });
-
-// Preloader
-var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);}, 0);}
