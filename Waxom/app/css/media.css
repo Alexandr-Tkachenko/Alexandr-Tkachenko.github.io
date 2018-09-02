@@ -37,7 +37,6 @@
 
 }
 
-/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
 
 	.header-top, .skills, .buy-theme-wrapper, .posts-carousel, .partners-carousel, .sub-footer-wrap, .main-footer-wrap {
@@ -112,10 +111,9 @@
 
 @media only screen and (max-width: 1024px) {
 
-
-}
-
-@media only screen and (max-width: 1024px) {
+	.header-composition {
+		margin-bottom: 230px;
+	}
 	
 	.portfolio-description {
 		width: 90%;
@@ -128,14 +126,13 @@
 
 }
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
 
 	.skills {
 		width: 768px;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		padding: 80px 0 33px;
+		padding: 80px 0 73px;
 	}
 
 	.skill {
@@ -146,6 +143,10 @@
 
 	.skill:first-child, .skill:nth-child(2) {
 		margin-top: 0;
+	}
+
+	.s-realization {
+		padding-top: 43px;
 	}
 	
 }
@@ -269,7 +270,6 @@
 
 }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
 
 	.header-carousel .owl-nav > * {
@@ -510,7 +510,6 @@
 
 }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
 	.btn {
@@ -546,6 +545,10 @@
 		flex-basis: 100%;
 		margin-top: 0;
 		margin-bottom: 90px;
+	}
+
+	.skill:last-child {
+		margin-bottom: 65px;
 	}
 
 	.skill:after {
@@ -871,12 +874,4 @@
     font-size: 5.2px;
 	}
 
-}/*
-
-header, section, footer {
-	display: none !important;
 }
-
-.s-skills, .s-realization {
-	display: block !important;
-}*/

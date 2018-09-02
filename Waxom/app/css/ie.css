@@ -1,0 +1,10 @@
+.header-composition {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header-carousel .owl-dot {
+	height: auto;
+}
