@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 	// Open and close search input
 	$('.header-search-button').click( function(){
-		setTimeout( headerHeight, 3500);
+		setTimeout( headerHeight, 1000);
 		$('.header-search-form').addClass('is-active');
 		$('.hamburger').addClass('is-hidden');
 		$('.header-logo').addClass('is-hidden');	
@@ -47,7 +47,7 @@ $(document).ready(function(){
 	});
 
 	$('.header-close-form').click( function(){
-		setTimeout( headerHeight, 3500);
+		setTimeout( headerHeight, 1000);
 		$('.header-search-form').removeClass('is-active');
 		$('.hamburger').removeClass('is-hidden');
 		$('.header-logo').removeClass('is-hidden');	
