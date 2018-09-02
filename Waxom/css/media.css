@@ -37,7 +37,6 @@
 
 }
 
-/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
 
 	.header-top, .skills, .buy-theme-wrapper, .posts-carousel, .partners-carousel, .sub-footer-wrap, .main-footer-wrap {
@@ -112,11 +111,6 @@
 
 @media only screen and (max-width: 1024px) {
 
-
-}
-
-@media only screen and (max-width: 1024px) {
-
 	.header-composition {
 		margin-bottom: 230px;
 	}
@@ -132,7 +126,6 @@
 
 }
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
 
 	.skills {
@@ -277,7 +270,6 @@
 
 }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
 
 	.header-carousel .owl-nav > * {
@@ -518,7 +510,6 @@
 
 }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
 	.btn {
@@ -883,12 +874,4 @@
     font-size: 5.2px;
 	}
 
-}/*
-
-header, section, footer {
-	display: none !important;
 }
-
-.s-skills, .s-realization {
-	display: block !important;
-}*/

@@ -1223,15 +1223,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Preloader */
 
-.preloader {	
-	
-}
-
-.loader.done {
-	opacity: 0;
-	visibility: hidden;
-}
-
 .loader {
 	display: block;
 	position: fixed;
@@ -1247,4 +1238,9 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 1;
 	visibility: visible;
 	transition: 1s all ease;
+}
+
+.loader.done {
+	opacity: 0;
+	visibility: hidden;
 }
