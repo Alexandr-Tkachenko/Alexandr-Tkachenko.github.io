@@ -37,6 +37,7 @@ $(document).ready(function(){
 
 	// Open and close search input
 	$('.header-search-button').click( function(){
+		setTimeout( headerHeight{}, 1000);
 		$('.header-search-form').addClass('is-active');
 		$('.hamburger').addClass('is-hidden');
 		$('.header-logo').addClass('is-hidden');	
@@ -46,6 +47,7 @@ $(document).ready(function(){
 	});
 
 	$('.header-close-form').click( function(){
+		setTimeout( headerHeight{}, 1000);
 		$('.header-search-form').removeClass('is-active');
 		$('.hamburger').removeClass('is-hidden');
 		$('.header-logo').removeClass('is-hidden');	
@@ -194,9 +196,7 @@ $(document).ready(function(){
 
 
 	// Wow.js	
-	setTimeout(function () {
-		new WOW().init();
-	}, 700);
+	new WOW().init();
 
 
 	// Styles for fucking IE
