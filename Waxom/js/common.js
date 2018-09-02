@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	headerHeight ();
 
-	window.addEventListener( "resize", headerHeight);
+	//window.addEventListener( "resize", headerHeight);
 	
 
 	// Open and close search input
